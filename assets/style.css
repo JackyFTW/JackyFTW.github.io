@@ -31,6 +31,11 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -145,6 +150,8 @@ a {
 }
 
 .card-icon {
+    display: flex;
+    align-items: center;
     width: 20%;
 }
 
@@ -152,4 +159,16 @@ a {
     width: 100%;
     max-height: 100%;
     border-radius: 50%;
+}
+
+/*
+ * Footer
+ */
+
+#footer {
+    background-color: var(--secondary);
+    margin-top: 15vh;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
 }

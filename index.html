@@ -6,11 +6,21 @@
     <title>Jack Barter | About</title>
 
     <link rel="stylesheet" href="assets/style.css">
+
+    <script>
+        function onMouseGitHub(hover) {
+            let img = document.getElementById("github");
+            img.src = hover ? "assets/github-dark.png" : "assets/github.png";
+        }
+    </script>
 </head>
 <body>
     <div id="navbar">
         <p id="name">JACK BARTER <span id="about">> ABOUT</span></p>
-        <a id="profile" href="https://github.com/JackyFTW" target="_blank">
+        <a id="profile" href="https://github.com/JackyFTW"
+                        target="_blank" 
+                        onmouseover="onMouseGitHub(true)"
+                        onmouseout="onMouseGitHub(false)">
             <img id="github" src="assets/github.png"></img>
             <p id="profile-label">PROFILE</p>
         </a>
@@ -19,7 +29,14 @@
         <div class="card">
             <div class="card-content">
                 <p class="card-java">public static void</p>
-                <p class="card-text">Testing testing</p>
+                <p class="card-title">whoAmI()</p>
+                <p class="card-text">
+                    Hi, my name is <span class="highlight">Jack</span>,
+                    and I'm a student studying <span class="highlight">Software Engineering</span> from Connecticut!
+                    In 2023, I obtained my high school diploma from <span class="highlight">Hall High School</span>.
+                    I enjoy tinkering around with new pieces of software, servers, and exploring new projects.
+                    In addition, I am interested in Law Enforcement with experience in <span class="highlight">Public Safety</span>.
+                </p>
             </div>
             <div class="card-icon">
                 <img class="card-img" src="assets/pfp.png"></img>
@@ -27,11 +44,32 @@
         </div>
         <div class="card">
             <div class="card-icon">
-                <img class="card-img" src="assets/pfp.png"></img>
+                <img class="card-img" src="assets/chickfila.png"></img>
             </div>
             <div class="card-content">
                 <p class="card-java">public static void</p>
-                <p class="card-text">Testing testing</p>
+                <p class="card-title">getFavoriteFood()</p>
+                <p class="card-text">
+                    My favorite food, without a doubt, is <span class="highlight">chicken</span>! 
+                    More specifically, I routinely order <span class="highlight">Chick-Fil-A</span> when I can.
+                    If you don't like chicken, then you're surely missing out.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <p class="card-java">public static void</p>
+                <p class="card-title">swen101()</p>
+                <p class="card-text">
+                    One of the classes I am taking at RIT is <span class="highlight">Software Engineering Freshman Seminar</span>.
+                    I hope to be able to refine <span class="highlight">my outlook</span> on the industry
+                    and learn vital <span>standards</span>.
+                    On top of that, it is very exciting to work in a class that emphasizes <span>collaboration</span>.
+                    Finally, it would be amazing to continue to <span>engage</span> in both familiar and new software concepts throughout.
+                </p>
+            </div>
+            <div class="card-icon">
+                <img class="card-img" src="assets/se.png"></img>
             </div>
         </div>
     </div>
